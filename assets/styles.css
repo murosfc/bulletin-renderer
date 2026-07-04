@@ -405,7 +405,7 @@ body::before {
 
 /* PIX Card */
 .pix-card {
-  background: linear-gradient(135deg, var(--color-primary) 0%, #153833 100%);
+  background: linear-gradient(135deg, #112F2B 0%, #153833 100%);
   color: #FFFFFF;
   border: none;
 }
@@ -428,7 +428,7 @@ body::before {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: var(--border-radius-md);
-  padding: 1rem;
+  padding: 0.75rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -438,7 +438,7 @@ body::before {
 
 .pix-key {
   font-family: monospace;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--color-accent);
   letter-spacing: 0.05em;
@@ -448,19 +448,21 @@ body::before {
 .btn-copy {
   background: var(--color-accent);
   border: none;
-  color: var(--color-primary);
-  font-weight: 700;
-  padding: 0.5rem 1rem;
+  color: #112F2B; /* Always dark text/stroke for contrast on gold background */
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: var(--border-radius-sm);
-  font-size: 0.85rem;
   cursor: pointer;
   transition: var(--transition);
-  font-family: var(--font-sans);
-  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .btn-copy:hover {
   background-color: #FFFFFF;
+  color: #112F2B;
 }
 
 .pix-notice {

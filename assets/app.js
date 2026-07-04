@@ -33,13 +33,22 @@ function setupPixCopy() {
         document.body.removeChild(textarea);
       }
 
-      // Show copied tooltip feedback
+      // Show copied tooltip feedback and toggle SVG icons
+      const iconCopy = copyBtn.querySelector(".icon-copy");
+      const iconCheck = copyBtn.querySelector(".icon-check");
+      
       copyBtn.classList.add("copied");
-      copyBtn.textContent = "Copiado!";
+      if (iconCopy && iconCheck) {
+        iconCopy.style.display = "none";
+        iconCheck.style.display = "block";
+      }
       
       setTimeout(() => {
         copyBtn.classList.remove("copied");
-        copyBtn.textContent = "Copiar CNPJ";
+        if (iconCopy && iconCheck) {
+          iconCopy.style.display = "block";
+          iconCheck.style.display = "none";
+        }
       }, 2000);
     } catch (err) {
       console.error("Failed to copy text: ", err);

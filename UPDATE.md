@@ -62,6 +62,8 @@ Abra o arquivo de texto extraído (`scratch_extracted_text.txt`) e identifique a
    - Foto e aviso do Ministério Desperta Débora (ou outro ministério que esteja na página 3).
    - Lista de tags dos Pedidos de Oração.
    - Organograma de liderança (verifique se há alterações nos nomes de Pastores, Presbíteros ou Diáconos).
+   - **Atenção ao Botão de Copiar PIX**: O botão deve permanecer no formato de botão de ícone (contendo as tags `<svg>` da classe `icon-copy` e `icon-check`). Não insira texto dentro do botão, pois isso causa quebra de linha no CNPJ.
+   - **Atenção ao Card de Contribuição**: O card `.pix-card` deve possuir um gradiente de fundo escuro fixado no CSS para manter a legibilidade do texto branco tanto no tema claro quanto no tema escuro.
 
 ### Passo 4: Validação
 1. Inicie o servidor HTTP local na porta 5500:
