@@ -13,6 +13,16 @@
   
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="assets/styles.css">
+  
+  <!-- Theme Initialization Script -->
+  <script>
+    (function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
 </head>
 <body>
 

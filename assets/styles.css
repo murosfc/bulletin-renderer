@@ -30,6 +30,49 @@
   --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+/* Dark Theme Variables & Styles */
+[data-theme="dark"] {
+  --bg-primary: #0A1412; /* Deep dark teal-gray background */
+  --bg-secondary: #112321; /* Slightly lighter deep teal card background */
+  --color-primary: #FAF8F5; /* Off-white for headings */
+  --color-primary-light: #E2DDD5;
+  --color-accent: #E0B863; /* Brighter gold/bronze for visibility on dark background */
+  --color-accent-hover: #F2D285;
+  --color-muted: #8FA2A0; /* Light gray-green for muted elements */
+  --color-ink: #E2ECEB; /* Off-white for body text */
+  --color-alert: #E88E74; /* Softer coral for warnings in dark mode */
+  --color-alert-bg: #2E1B16;
+  
+  --card-border: 1px solid rgba(250, 248, 245, 0.08);
+  --card-shadow: 0 12px 40px -15px rgba(0, 0, 0, 0.5);
+  --card-shadow-hover: 0 20px 48px -12px rgba(0, 0, 0, 0.7);
+}
+
+[data-theme="dark"] body::before {
+  background: radial-gradient(circle at 50% -200px, rgba(224, 184, 99, 0.15) 0%, rgba(10, 20, 18, 0) 70%);
+}
+
+[data-theme="dark"] .sermon-verse-box {
+  background-color: #162E2A;
+}
+
+[data-theme="dark"] .mdd-badge {
+  background-color: #162E2A;
+}
+
+[data-theme="dark"] .birthday-item {
+  background-color: #0A1412;
+}
+
+[data-theme="dark"] .prayer-tag {
+  background-color: #162E2A;
+}
+
+[data-theme="dark"] .identity-item {
+  background-color: #162E2A;
+}
+
+
 * {
   box-sizing: border-box;
   margin: 0;
