@@ -75,3 +75,8 @@ Abra o arquivo de texto extraído (`scratch_extracted_text.txt`) e identifique a
    - Se o botão de copiar a chave PIX funciona.
    - Se o lightbox de imagens carrega e fecha normalmente.
 3. Apresente o resultado final e as capturas de tela para o usuário.
+
+### Diretriz Permanente de Leitura no Mobile
+- Em telas menores, mantenha o padding dos cards mais compacto para melhorar a leitura.
+- Referência atual de layout: em até 768px use `padding: 1.75rem` em `.card`; em até 480px use `padding: 1.25rem`.
+- Evite voltar para padding amplo no mobile (ex.: `2.5rem`), pois prejudica o conforto visual do conteúdo textual.
