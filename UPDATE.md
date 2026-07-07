@@ -48,6 +48,8 @@ Abra o arquivo de texto extraído (`scratch_extracted_text.txt`) e identifique a
 6. **Dados de Contribuição e Liderança**:
    - Chave PIX (CNPJ ou conta).
    - Nomes da liderança local (Pastores, Presbíteros e Diáconos).
+7. **Escala de Serviços**:
+   - Equipes de Louvor e Junta Diaconal escaladas para o domingo corrente e o próximo.
 
 ### Passo 3: Atualização do HTML
 1. Edite o arquivo [index.html](file:///f:/bulletin-renderer/index.html). **Não modifique as classes CSS ou a estrutura de tags gerais**, pois elas definem o estilo moderno da página.
@@ -61,7 +63,10 @@ Abra o arquivo de texto extraído (`scratch_extracted_text.txt`) e identifique a
    - Galeria de imagens `gallery-grid` (verifique quantas imagens foram extraídas no passo 1 e insira as tags correspondentes com `data-src` apontando para `assets/boletim-images/page-02-img-XX.jpg`).
    - Foto e aviso do Ministério Desperta Débora (ou outro ministério que esteja na página 3).
    - Lista de tags dos Pedidos de Oração.
-   - Organograma de liderança (verifique se há alterações nos nomes de Pastores, Presbíteros ou Diáconos).
+   - Organograma de liderança (verifique se há alterações nos nomes de Pastores, Presbíteros ou Diáconos, e também atualize os Presidentes das Sociedades Internas UPH/SAF/UMP/UPA e o Responsável pelo CETH conforme extraídos do PDF).
+   - **Hierarquia de Colunas (Responsividade)**: O arquivo está estruturado em `.main-column` (conteúdo semanal dinâmico) e `.side-column` (informações institucionais estáticas). Mantenha a ordem dos elementos dentro delas para que o fluxo de leitura móvel (mobile) comece com o conteúdo principal e termine com o institucional.
+   - **Escala de Serviços**: Atualize a escala de louvor e junta diaconal no bloco `.escala-grid` para o domingo atual e o próximo.
+   - **Padding Compacto**: O design utiliza paddings reduzidos (`1.5rem` nos cards principais no desktop, `1.25rem` no mobile e `1rem` em telas estreitas, e `1.25rem` no `.identity-item` interno) para garantir que a página fique elegante e compacta. Não altere estes valores sem necessidade.
    - **Atenção ao Botão de Copiar PIX**: O botão deve permanecer no formato de botão de ícone (contendo as tags `<svg>` da classe `icon-copy` e `icon-check`). Não insira texto dentro do botão, pois isso causa quebra de linha no CNPJ.
    - **Atenção ao Card de Contribuição**: O card `.pix-card` deve possuir um gradiente de fundo escuro fixado no CSS para manter a legibilidade do texto branco tanto no tema claro quanto no tema escuro.
 

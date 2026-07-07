@@ -222,9 +222,16 @@ body::before {
 /* Main Dashboard Grid */
 .dashboard-grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: 7.2fr 4.8fr;
   gap: 2rem;
   padding-bottom: 6rem;
+  align-items: start;
+}
+
+.main-column, .side-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 /* Card Styles */
@@ -233,7 +240,7 @@ body::before {
   border: var(--card-border);
   border-radius: var(--border-radius-lg);
   box-shadow: var(--card-shadow);
-  padding: 2.5rem;
+  padding: 1.5rem;
   transition: var(--transition);
   position: relative;
   overflow: hidden;
@@ -313,7 +320,7 @@ body::before {
 
 .sermon-verse-box {
   margin-top: 3rem;
-  padding: 2rem;
+  padding: 1.25rem;
   background-color: #FAF7F0;
   border-left: 4px solid var(--color-accent);
   border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
@@ -691,7 +698,7 @@ body::before {
   background-color: var(--bg-primary);
   border: var(--card-border);
   border-radius: var(--border-radius-md);
-  padding: 2rem;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -863,25 +870,14 @@ body::before {
 /* Responsive Breakpoints */
 @media (max-width: 1024px) {
   .dashboard-grid {
-    gap: 1.5rem;
-  }
-  
-  .card-sermon {
-    grid-column: span 12;
-  }
-  
-  .side-panel {
-    grid-column: span 12;
-    flex-direction: grid;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 }
 
 @media (max-width: 768px) {
   .card {
-    padding: 1.75rem;
+    padding: 1.25rem;
   }
 
   .card-title-group {
@@ -894,10 +890,6 @@ body::before {
   
   .hero h1 {
     font-size: 2.5rem;
-  }
-  
-  .side-panel {
-    grid-template-columns: 1fr;
   }
   
   .mdd-section {
@@ -923,7 +915,7 @@ body::before {
 
 @media (max-width: 480px) {
   .card {
-    padding: 1.25rem;
+    padding: 1rem;
   }
 
   .card-title-group {
@@ -943,3 +935,43 @@ body::before {
     align-items: center;
   }
 }
+
+/* Escala de Serviços Card */
+.escala-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.escala-item {
+  background-color: var(--bg-primary);
+  border: var(--card-border);
+  padding: 1rem;
+  border-radius: var(--border-radius-md);
+}
+
+.escala-item h3 {
+  font-size: 0.9rem;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.escala-item p {
+  font-size: 0.88rem;
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
+}
+
+.escala-item p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 580px) {
+  .escala-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
