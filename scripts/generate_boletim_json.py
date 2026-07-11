@@ -132,8 +132,9 @@ def extract_article(page1: str) -> dict:
     reference = ""
     ref_idx = -1
     for idx, line in enumerate(lines):
-        if re.match(r"^[1-3]?[A-Za-zÀ-ÿ]+\s+\d+:\d+(?:-\d+)?$", line):
-            reference = line
+        # Aceita "Marcos 4:35-41", "Mateus 6.27" e variantes entre parenteses.
+        if re.match(r"^\(?[1-3]?\s?[A-Za-zÀ-ÿ]+\s+\d+[.:]\d+(?:-\d+)?\)?$", line):
+            reference = line.strip("()").strip()
             ref_idx = idx
             break
 
@@ -167,7 +168,7 @@ def extract_article(page1: str) -> dict:
                     body_candidate = body_candidate[:verse_anchor]
             if author:
                 body_candidate = body_candidate.replace(author, "")
-            body = normalize(body_candidate)
+            body = normalize(body_candidate).lstrip(")").strip()
 
     return {
         "title": title,

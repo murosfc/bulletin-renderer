@@ -1,0 +1,100 @@
+name: Atualizar Boletim
+
+on:
+  # Disparado pela Cloud Function do Firebase (projeto ipmacae) quando um novo
+  # boletim é enviado. Payload esperado: { "pdf_url": "<url de download do PDF>" }
+  repository_dispatch:
+    types: [novo-boletim]
+  # Disparo manual para testes: Actions -> Atualizar Boletim -> Run workflow
+  workflow_dispatch:
+    inputs:
+      pdf_url:
+        description: "URL de download do PDF do boletim"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: boletim
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Baixar novo boletim.pdf
+        env:
+          PDF_URL: ${{ github.event_name == 'workflow_dispatch' && inputs.pdf_url || github.event.client_payload.pdf_url }}
+        run: |
+          if [ -z "$PDF_URL" ]; then
+            echo "::error::Nenhuma pdf_url informada no payload"; exit 1
+          fi
+          curl -fsSL "$PDF_URL" -o boletim.pdf
+          head -c 5 boletim.pdf | grep -q "%PDF-" || { echo "::error::Arquivo baixado não é um PDF válido"; exit 1; }
+          ls -la boletim.pdf
+
+      - name: Preparar dependências (pypdf, pillow, playwright)
+        run: |
+          pip install --quiet pypdf pillow playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Atualizar landing page com Claude Code
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            Um novo boletim.pdf acabou de ser colocado na raiz do repositório.
+            Siga rigorosamente as instruções de UPDATE.md e CLAUDE.md para
+            atualizar a landing page:
+
+            1. Rode `python scripts/generate_boletim_json.py` (pypdf e pillow
+               já estão instalados) para regenerar data/boletim.json e as
+               imagens em assets/boletim-images/.
+            2. Leia o texto extraído (rawPages do JSON) e corrija manualmente
+               em data/boletim.json qualquer campo que a extração automática
+               tenha errado (título, referência, autor, corpo, versículo,
+               agenda, aniversariantes).
+            3. Atualize index.html com o conteúdo da nova edição, preservando
+               o design, as classes CSS e a estrutura de tags. Atenção a
+               avisos/cancelamentos na agenda (classe `cancelled`), à galeria
+               (uma tag por imagem realmente extraída) e ao número da edição
+               no <head>, no cabeçalho e no rodapé.
+            4. Valide: suba `python -m http.server 5500` em segundo plano e
+               use Playwright com Chromium (já instalado) para conferir que
+               todos os assets carregam, que o botão de copiar PIX funciona e
+               que o lightbox abre e fecha. Salve capturas de tela (desktop
+               completo, galeria e mobile 390px) na pasta ./screenshots/.
+            5. Escreva um resumo do que mudou em ./screenshots/RESUMO.md.
+
+            NÃO faça git commit nem git push — o workflow cuida disso.
+            Se o PDF estiver ilegível ou radicalmente diferente do padrão,
+            descreva o problema em ./screenshots/RESUMO.md e não altere o
+            index.html.
+          claude_args: '--allowedTools "Bash,Edit,Write,Read,Glob,Grep" --max-turns 100'
+
+      - name: Publicar capturas de tela e resumo (artifact)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: validacao-boletim
+          path: screenshots/
+          if-no-files-found: ignore
+
+      - name: Commit e push
+        run: |
+          rm -rf screenshots
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração para commitar."
+            exit 0
+          fi
+          ISSUE=$(python -c "import json; print(json.load(open('data/boletim.json'))['meta'].get('issue',''))" 2>/dev/null || echo "")
+          git commit -m "chore: atualiza boletim${ISSUE:+ para edição Nº $ISSUE} (automático)"
+          git push
