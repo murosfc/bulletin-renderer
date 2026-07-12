@@ -19,8 +19,13 @@ Upload semanal do PDF → Firebase (onDocumentCreated no projeto ipmacae)
   (`validacao-boletim`) em cada execução, junto com um `RESUMO.md` do que mudou.
 
 **Secret necessário no repositório** (Settings → Secrets and variables →
-Actions): `ANTHROPIC_API_KEY` — chave criada em https://console.anthropic.com
-(cada execução consome créditos da API).
+Actions) — basta UM dos dois:
+
+- `CLAUDE_CODE_OAUTH_TOKEN` (recomendado, sem custo extra): usa a assinatura
+  Claude Pro/Max existente. Gere o token na sua máquina com
+  `claude setup-token` e cole o valor no secret.
+- `ANTHROPIC_API_KEY`: chave criada em https://console.anthropic.com (cada
+  execução consome créditos da API — na ordem de centavos por edição).
 
 ## Lado Firebase (projeto ipmacae) — código para integrar
 

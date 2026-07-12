@@ -47,6 +47,10 @@ jobs:
       - name: Atualizar landing page com Claude Code
         uses: anthropics/claude-code-action@v1
         with:
+          # Basta UM dos dois secrets: CLAUDE_CODE_OAUTH_TOKEN (assinatura
+          # Claude Pro/Max, gerado com `claude setup-token`) ou
+          # ANTHROPIC_API_KEY (API paga do console.anthropic.com).
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           prompt: |
             Um novo boletim.pdf acabou de ser colocado na raiz do repositório.
