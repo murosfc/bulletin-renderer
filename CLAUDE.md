@@ -31,3 +31,4 @@ C:/Python313/python.exe -m http.server 5500
 
 - Se algum trecho vier truncado pela extracao do PDF, manter o conteudo bruto em `rawPages` para nao perder informacao.
 - O PDF pode variar de edicao para edicao; priorizar robustez com fallback no frontend.
+- No mobile (`@media max-width: 480px`), o padding lateral do `.shell` deve ser minimo (4-8px por lado, ~12px de reducao total via `calc(100% - 12px)`) para maximizar a area de leitura. Nao aumentar esse valor sem solicitacao explicita.

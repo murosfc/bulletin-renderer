@@ -914,6 +914,10 @@ body::before {
 }
 
 @media (max-width: 480px) {
+  .shell {
+    width: calc(100% - 12px);
+  }
+
   .card {
     padding: 1rem;
   }
