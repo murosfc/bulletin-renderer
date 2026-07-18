@@ -52,6 +52,7 @@ jobs:
           # ANTHROPIC_API_KEY (API paga do console.anthropic.com).
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          show_full_output: true
           prompt: |
             Um novo boletim.pdf acabou de ser colocado na raiz do repositório.
             Siga rigorosamente as instruções de UPDATE.md e CLAUDE.md para
