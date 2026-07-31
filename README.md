@@ -17,7 +17,7 @@ Para atualizar a landing page com o novo boletim semanal utilizando uma Intelig√
 
 Abra um servidor HTTP simples:
 ```powershell
-C:/Python313/python.exe -m http.server 5500
+H:/Python313/python.exe -m http.server 5500
 ```
 E acesse `http://localhost:5500`.
 

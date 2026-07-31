@@ -940,6 +940,16 @@ body::before {
   }
 }
 
+@media (max-width: 768px) {
+  .gallery-item-footer {
+    opacity: 1;
+    transform: translateY(0);
+    background: rgba(17, 47, 43, 0.75);
+    padding: 0.2rem 0.55rem;
+    border-radius: var(--border-radius-sm);
+  }
+}
+
 /* Escala de Serviços Card */
 .escala-grid {
   display: grid;
