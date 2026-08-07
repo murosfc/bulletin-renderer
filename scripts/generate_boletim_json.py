@@ -112,7 +112,7 @@ def is_logo_image(width: int, height: int, extension: str) -> bool:
 
     if width <= 220 and height <= 220:
         return True
-    if area <= 70000:
+    if area <= 50000:
         return True
     if (height < 120 and width > 420) or (width < 120 and height > 420):
         return True

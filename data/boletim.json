@@ -1,15 +1,15 @@
 {
   "meta": {
     "title": "Boletim Semanal",
-    "issue": "1884",
-    "date": "Domingo, 02 de agosto de 2026",
+    "issue": "1885",
+    "date": "Domingo, 09 de agosto de 2026",
     "pdfFile": "boletim.pdf",
     "generatedBy": "scripts/generate_boletim_json.py"
   },
   "hero": {
     "kicker": "Vida em comunidade",
-    "headline": "NOSSA MISSÃO",
-    "subheadline": "Mensagem da semana",
+    "headline": "A RESPONSABILIDADE PATERNA EM TRANSMITIR A FÉ À PRÓXIMA GERAÇÃO",
+    "subheadline": "Deuteronômio 6.7",
     "highlights": [
       "Escola Bíblica Dominical às 9h30",
       "Cultos às 11h e 18h",
@@ -18,19 +18,19 @@
     ]
   },
   "article": {
-    "title": "NOSSA MISSÃO",
-    "reference": "",
-    "author": "Rev. Ivanilson Silva",
-    "body": "",
-    "verse": "",
-    "verseReference": ""
+    "title": "A RESPONSABILIDADE PATERNA EM TRANSMITIR A FÉ À PRÓXIMA GERAÇÃO",
+    "reference": "Deuteronômio 6.7",
+    "author": "Rev. Samuel Gomes",
+    "body": "Em Deuteronômio 6, Moisés se dirige ao povo às vésperas da entrada na Terra Prometida. Antes de falar sobre conquistas, prosperidade ou segurança, ele enfatiza algo muito mais importante: a fidelidade ao Senhor deveria ser preservada por meio do ensino contínuo dentro do lar.\n\nO versículo 7 nos apresenta um princípio que permanece atual. A ordem não é simplesmente ensinar informações sobre Deus, mas inculcar sua Palavra no coração dos filhos. O verbo utilizado transmite a ideia de repetir com diligência, gravar profundamente, insistir até que a verdade seja assimilada. A formação espiritual não acontece por acaso; ela exige dedicação, perseverança e testemunho. O primeiro ambiente de discipulado não é a igreja, a escola ou qualquer ministério infantil. É o lar. Deus confiou aos pais a missão de serem os líderes espirituais da família, a missão de conduzir seus filhos no conhecimento do Senhor. A igreja auxilia, orienta e coopera, mas jamais substitui a responsabilidade paterna.\n\nObserve que Moisés descreve um ensino que permeia toda a vida: \"assentado em tua casa\", \"andando pelo caminho\", \"ao deitar-te\" e \"ao levantar-te\". A fé não deve ser limitada ao culto dominical ou ao momento do devocional. Ela precisa estar presente nas conversas cotidianas, nas decisões familiares, na maneira de enfrentar dificuldades, na prática do perdão, no uso dos recursos, na forma de tratar o próximo e, acima de tudo, no exemplo diário dos pais.\n\nOs filhos aprendem muito mais pelo que observam do que apenas pelo que ouvem. Um pai que ama a Palavra, ora com sua família, participa fielmente da vida da igreja, demonstra arrependimento quando erra e vive em dependência de Cristo, deixa um legado que ultrapassa gerações. Infelizmente, muitos pais têm delegado essa missão a terceiros. Esperam que a igreja, a escola cristã ou os líderes de ministérios façam aquilo que Deus confiou prioritariamente ao lar. Entretanto, nenhuma programação eclesiástica consegue substituir uma vida de piedade cultivada diariamente dentro de casa.\n\nNenhum pai é perfeito. Todos falhamos. Nossa esperança, porém, não repousa em nossa capacidade, mas na graça de Deus, aquele que nunca falha. Contudo, há misericórdia para aqueles que se arrependem, buscam o Senhor e retomam, com humildade, sua vocação de conduzir a família no caminho da verdade.\n\nQue os pais de nossa igreja compreendam que seu maior legado não será um patrimônio, uma profissão ou uma herança material, mas filhos que conheçam, amem e sirvam ao Senhor Jesus Cristo. Que nossas casas sejam escolas de piedade, lugares onde a Palavra é lida, ensinada, vivida e celebrada diariamente. Que o Senhor fortaleça nossos lares e conceda aos pais sabedoria, perseverança e graça para transmitir fielmente a fé à próxima geração.",
+    "verse": "tu as inculcarás a teus filhos, e delas falarás assentado em tua casa, e andando pelo caminho, e ao deitar-te, e ao levantar-te",
+    "verseReference": "Deuteronômio 6.7"
   },
   "community": {
-    "summary": "Vida em\ncomunidade\nViver em comunidade uma fé contagiante.\n NOSSOS ENCONTROS - CÉLULAS \n4\nCélula 19\nCélula 05\nCélula 02\nCélula 21\nCélula 04 Célula 28\nCélula 18\nCélula 06 Célula 24\nCélula 07 Célula 29"
+    "summary": "Vida em\ncomunidade\nViver em comunidade uma fé contagiante.\n NOSSOS ENCONTROS - CÉLULAS \n4\nCélula 11 Célula 06Célula 02 Célula 15\nCélula 03 Célula 20\nCélula 28Célula 24 Célula 29 Célula 26\nCélula 04\n Célula 23\nCélula 12 Célula 21 Célula 07 Célula 10\nCélula 15 Célula 18 Célula 09 Célula 05\nCélula 25 Célula 27 Célula 13 Célula 08"
   },
   "identity": {
-    "vision": "",
-    "mission": "",
+    "vision": "Ser uma igreja com uma fé viva e contagiante, impactando Macaé através dos grupos de comunhão e da educação, proclamando o Evangelho da graça para transformar vidas.",
+    "mission": "Ser uma igreja bíblica e reformada, relevante e contemporânea, que glorifica a Deus através da comunhão, ação social e excelência no serviço, sendo uma agência do Reino para um mundo melhor.",
     "values": [
       "Famílias fortes e unidas;",
       "Integridade e relevância na pregação;",
@@ -38,36 +38,36 @@
       "Oração como estilo de vida;",
       "Excelência no exercício dos dons;",
       "Criatividade na comunicação do evangelho;",
-      "Formação e treinamento de liderança para a multiplicação de discípulos. QUANDO DEUS NOS CONDUZ ALÉM DA LÓGICA, NOSSO CORAÇÃO É EXPOSTO E, chegando Faraó, os ﬁlhos de Israel levantaram os olhos, e eis que os egípcios vinham atrás deles, e temeram muito; então, os ﬁlhos de Israel clamaram ao Senhor. Disseram a Moisés: Será, por não haver sepulcros no Egito, que nos tiraste de lá, para que morramos neste deserto? Por que nos trataste assim, fazendo-nos sair do Egito? Não é isso o que te dissemos no Egito: deixa-nos, para que sirvamos os egípcios? Pois melhor nos fora servir aos egípcios do que morrermos no deserto. (Ex. 14. 10-12) O texto nos mostra que o povo de Israel se vê diante de uma realidade humanamente insolúvel: o mar à frente, o exército de Faraó atrás, e nenhuma possibilidade de fuga. O texto revela que, quando Deus conduz seu povo a situações que ultrapassam a lógica humana, não apenas a providência divina é evidenciada, mas também o coração humano é exposto em sua fragilidade. Ao levantarem os olhos e perceberem a aproximação dos egípcios, os ﬁlhos de Israel são tomados por grande temor. O medo, aqui, não é apenas uma reação emocional; ele se torna o cenário onde a incredulidade se manifesta. Em vez de conﬁança no Deus que já os libertara com mão poderosa, o povo reage com murmuração e distorção da realidade. Eles reinterpretam a história da redenção como um erro trágico, chegando ao ponto de desejar retornar à escravidão, aﬁrmando que seria melhor servir aos egípcios do que morrer no deserto. Nesta passagem, a Escritura expõe com clareza uma verdade central da antropologia bíblica reformada: o coração humano, mesmo diante das obras claras de Deus, permanece inclinado à incredulidade e à autossuﬁciência. A prova não é para informar a Deus, pois Ele conhece perfeitamente o coração humano, mas para revelar ao próprio homem sua dependência absoluta da graça divina. Assim, o problema de Israel não é geográﬁco, mas espiritual. Não é a presença do exército egípcio que os derrota interiormente, mas a ausência de fé viva no Deus que prometeu libertação. A murmuração contra Moisés revela, em última análise, uma murmuração contra o próprio Senhor que os conduziu até aquele lugar. Portanto, quando Deus nos conduz além da lógica, Ele não apenas manifesta sua soberania externa na condução da história, mas também realiza uma obra interna de revelação: expõe a insuﬁciência da nossa fé e a necessidade contínua de dependência dEle. O deserto, nesse sentido, não é apenas um lugar de provação circunstancial, mas de diagnóstico espiritual. O texto nos ensina, portanto, que diante das impossibilidades, o problema não está na ﬁdelidade de Deus, mas na instabilidade do nosso coração e é exatamente aí que a graça se torna indispensável. Esse texto nos mostra que não estamos apenas observando Israel no deserto; estamos sendo confrontados com o reﬂexo da própria igreja hoje. O mesmo coração que murmurou diante do mar ainda habita em nós quando Deus nos conduz a cenários que fogem do nosso controle. Quando Deus fecha portas que considerávamos seguras, quando relacionamentos, planos proﬁssionais ou expectativas pessoais são frustrados, a tendência natural do coração ainda é a mesma: medo, questionamento e, muitas vezes, murmuração. Assim como Israel, somos tentados a reinterpretar a ﬁdelidade de Deus à luz da crise presente, como se o passado da graça não tivesse peso suﬁciente para sustentar a fé no presente. Em muitas pessoas hoje, isso aparece de maneira sutil. Há uma fé que funciona enquanto as circunstâncias são favoráveis, mas que entra em colapso quando Deus os conduz por caminhos que exigem dependência profunda. A lógica do coração humano ainda diz: “era melhor antes”, “talvez Deus tenha errado”, ou “isso não deveria estar acontecendo comigo”. O deserto moderno não é geográﬁco, mas existencial, são os momentos de perda de controle, de silêncio de Deus, de espera prolongada, de portas fechadas. O texto nos confronta com uma realidade dura, porém necessária: a crise não cria incredulidade, apenas revela aquilo que já estava presente. Por isso, Deus muitas vezes nos conduz a situações em que nossas seguranças são removidas, não para nos destruir, mas para nos ensinar a depender dEle de maneira mais profunda. A instabilidade que sentimos não está em Deus, mas em nossa própria fé ainda imatura. Para a igreja hoje, isso é um chamado ao arrependimento de uma fé condicionada às circunstâncias. Somos chamados a abandonar a espiritualidade baseada em conforto e a aprender a conﬁar na providência mesmo quando ela não parece lógica. O Deus que guiou Israel ao mar é o mesmo que guia sua igreja hoje — e Ele não perdeu o controle da história. Assim, a aplicação do texto não é apenas reconhecer que às vezes duvidamos, mas entender que, em Cristo, somos chamados a uma fé que permanece mesmo quando não compreende. Uma fé que não se apoia na estabilidade das circunstâncias, mas na ﬁdelidade imutável de Deus. Rev. Ivanilson Silva"
+      "Formação e treinamento de liderança para a multiplicação de discípulos."
     ]
   },
   "newsBlocks": [
     {
       "type": "featured",
-      "title": "NOSSA MISSÃO",
-      "subtitle": "",
-      "content": "",
+      "title": "A RESPONSABILIDADE PATERNA EM TRANSMITIR A FÉ À PRÓXIMA GERAÇÃO",
+      "subtitle": "Deuteronômio 6.7",
+      "content": "Em Deuteronômio 6, Moisés se dirige ao povo às vésperas da entrada na Terra Prometida. A fidelidade ao Senhor deveria ser preservada por meio do ensino contínuo dentro do lar.",
       "priority": 100
     },
     {
       "type": "community",
       "title": "Vida em Comunidade",
       "subtitle": "Comunhão",
-      "content": "Vida em\ncomunidade\nViver em comunidade uma fé contagiante.\n NOSSOS ENCONTROS - CÉLULAS \n4\nCélula 19\nCélula 05\nCélula 02\nCélula 21\nCélula 04 Célula 28\nCélula 18\nCélula 06 Célula 24\nCélula 07 Célula 29",
+      "content": "Vida em\ncomunidade\nViver em comunidade uma fé contagiante.\n NOSSOS ENCONTROS - CÉLULAS \n4\nCélula 11 Célula 06Célula 02 Célula 15\nCélula 03 Célula 20\nCélula 28Célula 24 Célula 29 Célula 26\nCélula 04\n Célula 23\nCélula 12 Célula 21 Célula 07 Célula 10\nCélula 15 Célula 18 Célula 09 Célula 05\nCélula 25 Célula 27 Célula 13 Célula 08",
       "priority": 85
     },
     {
       "type": "agenda",
       "title": "Agenda da Semana",
       "subtitle": "Programação",
-      "content": "Domingo 02/08: 08h - Ensaio Ministério de Louvor, 9h30 - Escola Bíblica dominical",
+      "content": "Domingo 09/08: 08h - Ensaio Ministério de Louvor, 9h30 - Escola Bíblica dominical",
       "priority": 80
     },
     {
       "type": "birthdays",
       "title": "Aniversariantes",
       "subtitle": "Celebração",
-      "content": "02/08 - Geovanna Cobelas de Oliveira; 03/08 - Karine Osório S. Martins; 04/08- Bernardo Paixão Gerhardt; 05/08- Maria Rosália Silva Silva; 06/08- Mariana Alves Leal; 07/08- Israel Becker Silveira Ferreira; 08/08 - Ester de Jesus Paixão O. Carvalho",
+      "content": "09/08 - Evelyn Rodrigues Leal; 10/08 - Sheila Mendes P. Linhares; 10/08 - Rafaela Alves; 11/08 - Rebeca Mello C. Stutz de Oliveira; 11/08 - Edson Vinícius Neno dos Santos; 11/08 - Eric Bersot Viana; 12/08 - André Luís Duncan Quintanilha; 12/08 - Fabiana Gonçalves Pinto; 12/08 - Regiane do Nascimento Yamaki; 12/08 - Júlia Sabará Lins; 13/08 - Lediléa da Mota Leal; 13/08 - Antônio Luís Valença G. da Silva; 13/08 - Brendon Vieira de Souza; 14/08 - Laura da Silva Ferreira; 14/08 - Joice Jaccoud Soares Barbosa; 14/08 - Sueli Bossan Moraes; 15/08 - Alexandre Oliveira dos Santos; 15/08 - Samuel Gomes Júnior",
       "priority": 75
     },
     {
@@ -88,7 +88,7 @@
       "type": "visual",
       "title": "Recortes do Boletim",
       "subtitle": "Visual",
-      "content": "13 imagens extraídas automaticamente do PDF.",
+      "content": "25 imagens extraídas automaticamente do PDF.",
       "priority": 55
     }
   ],
@@ -96,12 +96,12 @@
     {
       "id": "manchete",
       "title": "Manchete da Semana",
-      "kicker": "",
+      "kicker": "Deuteronômio 6.7",
       "news": [
         {
-          "title": "NOSSA MISSÃO",
-          "summary": "",
-          "meta": "Rev. Ivanilson Silva",
+          "title": "A RESPONSABILIDADE PATERNA EM TRANSMITIR A FÉ À PRÓXIMA GERAÇÃO",
+          "summary": "Em Deuteronômio 6, Moisés se dirige ao povo às vésperas da entrada na Terra Prometida. A fidelidade ao Senhor deveria ser preservada por meio do ensino contínuo dentro do lar.",
+          "meta": "Rev. Samuel Gomes",
           "highlight": true
         }
       ]
@@ -113,8 +113,18 @@
       "news": [
         {
           "title": "Vida em Comunidade",
-          "summary": "Vida em\ncomunidade\nViver em comunidade uma fé contagiante.\n NOSSOS ENCONTROS - CÉLULAS \n4\nCélula 19\nCélula 05\nCélula 02\nCélula 21\nCélula 04 Célula 28\nCélula 18\nCélula 06 Célula 24\nCélula 07 Célula 29",
+          "summary": "Vida em\ncomunidade\nViver em comunidade uma fé contagiante.\n NOSSOS ENCONTROS - CÉLULAS \n4\nCélula 11 Célula 06Célula 02 Célula 15\nCélula 03 Célula 20\nCélula 28Célula 24 Célula 29 Célula 26\nCélula 04\n Célula 23\nCélula 12 Célula 21 Célula 07 Célula 10\nCélula 15 Célula 18 Célula 09 Célula 05\nCélula 25 Célula 27 Célula 13 Célula 08",
           "meta": "Comunhão"
+        },
+        {
+          "title": "Nossa Missão",
+          "summary": "Ser uma igreja bíblica e reformada, relevante e contemporânea, que glorifica a Deus através da comunhão, ação social e excelência no serviço, sendo uma agência do Reino para um mundo melhor.",
+          "meta": "Identidade"
+        },
+        {
+          "title": "Nossa Visão",
+          "summary": "Ser uma igreja com uma fé viva e contagiante, impactando Macaé através dos grupos de comunhão e da educação, proclamando o Evangelho da graça para transformar vidas.",
+          "meta": "Identidade"
         },
         {
           "title": "Valores em Destaque",
@@ -127,7 +137,7 @@
             "Oração como estilo de vida;",
             "Excelência no exercício dos dons;",
             "Criatividade na comunicação do evangelho;",
-            "Formação e treinamento de liderança para a multiplicação de discípulos. QUANDO DEUS NOS CONDUZ ALÉM DA LÓGICA, NOSSO CORAÇÃO É EXPOSTO E, chegando Faraó, os ﬁlhos de Israel levantaram os olhos, e eis que os egípcios vinham atrás deles, e temeram muito; então, os ﬁlhos de Israel clamaram ao Senhor. Disseram a Moisés: Será, por não haver sepulcros no Egito, que nos tiraste de lá, para que morramos neste deserto? Por que nos trataste assim, fazendo-nos sair do Egito? Não é isso o que te dissemos no Egito: deixa-nos, para que sirvamos os egípcios? Pois melhor nos fora servir aos egípcios do que morrermos no deserto. (Ex. 14. 10-12) O texto nos mostra que o povo de Israel se vê diante de uma realidade humanamente insolúvel: o mar à frente, o exército de Faraó atrás, e nenhuma possibilidade de fuga. O texto revela que, quando Deus conduz seu povo a situações que ultrapassam a lógica humana, não apenas a providência divina é evidenciada, mas também o coração humano é exposto em sua fragilidade. Ao levantarem os olhos e perceberem a aproximação dos egípcios, os ﬁlhos de Israel são tomados por grande temor. O medo, aqui, não é apenas uma reação emocional; ele se torna o cenário onde a incredulidade se manifesta. Em vez de conﬁança no Deus que já os libertara com mão poderosa, o povo reage com murmuração e distorção da realidade. Eles reinterpretam a história da redenção como um erro trágico, chegando ao ponto de desejar retornar à escravidão, aﬁrmando que seria melhor servir aos egípcios do que morrer no deserto. Nesta passagem, a Escritura expõe com clareza uma verdade central da antropologia bíblica reformada: o coração humano, mesmo diante das obras claras de Deus, permanece inclinado à incredulidade e à autossuﬁciência. A prova não é para informar a Deus, pois Ele conhece perfeitamente o coração humano, mas para revelar ao próprio homem sua dependência absoluta da graça divina. Assim, o problema de Israel não é geográﬁco, mas espiritual. Não é a presença do exército egípcio que os derrota interiormente, mas a ausência de fé viva no Deus que prometeu libertação. A murmuração contra Moisés revela, em última análise, uma murmuração contra o próprio Senhor que os conduziu até aquele lugar. Portanto, quando Deus nos conduz além da lógica, Ele não apenas manifesta sua soberania externa na condução da história, mas também realiza uma obra interna de revelação: expõe a insuﬁciência da nossa fé e a necessidade contínua de dependência dEle. O deserto, nesse sentido, não é apenas um lugar de provação circunstancial, mas de diagnóstico espiritual. O texto nos ensina, portanto, que diante das impossibilidades, o problema não está na ﬁdelidade de Deus, mas na instabilidade do nosso coração e é exatamente aí que a graça se torna indispensável. Esse texto nos mostra que não estamos apenas observando Israel no deserto; estamos sendo confrontados com o reﬂexo da própria igreja hoje. O mesmo coração que murmurou diante do mar ainda habita em nós quando Deus nos conduz a cenários que fogem do nosso controle. Quando Deus fecha portas que considerávamos seguras, quando relacionamentos, planos proﬁssionais ou expectativas pessoais são frustrados, a tendência natural do coração ainda é a mesma: medo, questionamento e, muitas vezes, murmuração. Assim como Israel, somos tentados a reinterpretar a ﬁdelidade de Deus à luz da crise presente, como se o passado da graça não tivesse peso suﬁciente para sustentar a fé no presente. Em muitas pessoas hoje, isso aparece de maneira sutil. Há uma fé que funciona enquanto as circunstâncias são favoráveis, mas que entra em colapso quando Deus os conduz por caminhos que exigem dependência profunda. A lógica do coração humano ainda diz: “era melhor antes”, “talvez Deus tenha errado”, ou “isso não deveria estar acontecendo comigo”. O deserto moderno não é geográﬁco, mas existencial, são os momentos de perda de controle, de silêncio de Deus, de espera prolongada, de portas fechadas. O texto nos confronta com uma realidade dura, porém necessária: a crise não cria incredulidade, apenas revela aquilo que já estava presente. Por isso, Deus muitas vezes nos conduz a situações em que nossas seguranças são removidas, não para nos destruir, mas para nos ensinar a depender dEle de maneira mais profunda. A instabilidade que sentimos não está em Deus, mas em nossa própria fé ainda imatura. Para a igreja hoje, isso é um chamado ao arrependimento de uma fé condicionada às circunstâncias. Somos chamados a abandonar a espiritualidade baseada em conforto e a aprender a conﬁar na providência mesmo quando ela não parece lógica. O Deus que guiou Israel ao mar é o mesmo que guia sua igreja hoje — e Ele não perdeu o controle da história. Assim, a aplicação do texto não é apenas reconhecer que às vezes duvidamos, mas entender que, em Cristo, somos chamados a uma fé que permanece mesmo quando não compreende. Uma fé que não se apoia na estabilidade das circunstâncias, mas na ﬁdelidade imutável de Deus. Rev. Ivanilson Silva"
+            "Formação e treinamento de liderança para a multiplicação de discípulos."
           ]
         }
       ]
@@ -138,7 +148,7 @@
       "kicker": "Semana",
       "news": [
         {
-          "title": "Domingo 02/08",
+          "title": "Domingo 09/08",
           "summary": "",
           "meta": "Agenda",
           "bullets": [
@@ -147,15 +157,16 @@
             "11h - Culto de Louvor",
             "16h - Ensaio Ministério de Louvor",
             "18h - Culto de Louvor",
+            "10/08 (Segunda-Feira)",
             "18h - Reunião Desperta Déboras",
             "19h - Ensaio Coral Jardora",
-            "19h - Célula nos Lares",
-            "19h - Célula nos Lares",
-            "19h - Célula nos Lares"
+            "19h30 - Célula nos Lares",
+            "19h30 - Célula nos Lares",
+            "19h30 - Célula nos Lares"
           ]
         },
         {
-          "title": "Domingo 09/08",
+          "title": "Domingo 16/08",
           "summary": "",
           "meta": "Agenda",
           "bullets": []
@@ -165,13 +176,12 @@
           "summary": "",
           "meta": "Celebração",
           "bullets": [
-            "02/08 - Geovanna Cobelas de Oliveira",
-            "03/08 - Karine Osório S. Martins",
-            "04/08- Bernardo Paixão Gerhardt",
-            "05/08- Maria Rosália Silva Silva",
-            "06/08- Mariana Alves Leal",
-            "07/08- Israel Becker Silveira Ferreira",
-            "08/08 - Ester de Jesus Paixão O. Carvalho"
+            "10/08 - Sheila Mendes P. Linhares",
+            "11/08- Rebeca Mello C. Stutz de Oliveira",
+            "12/08- André Luís Duncan Quintanilha",
+            "13/08- Lediléa da Mota Leal",
+            "14/08- Laura da Silva Ferreira",
+            "15/08- Alexandre Oliveira dos Santos"
           ]
         }
       ]
@@ -200,7 +210,7 @@
       "news": [
         {
           "title": "Recortes do Boletim",
-          "summary": "13 imagens incorporadas foram encontradas e exibidas no mural visual.",
+          "summary": "25 imagens incorporadas foram encontradas e exibidas no mural visual.",
           "meta": "Galeria"
         }
       ]
@@ -210,124 +220,208 @@
     {
       "src": "assets/boletim-images/page-02-img-01.jpg",
       "page": 2,
-      "name": "Im97.jpg",
-      "width": 254,
-      "height": 339
+      "name": "Im104.jpg",
+      "width": 286,
+      "height": 311
     },
     {
       "src": "assets/boletim-images/page-02-img-02.jpg",
       "page": 2,
-      "name": "Im98.jpg",
-      "width": 422,
-      "height": 317
+      "name": "Im105.jpg",
+      "width": 355,
+      "height": 207
     },
     {
       "src": "assets/boletim-images/page-02-img-03.jpg",
       "page": 2,
-      "name": "Im99.jpg",
-      "width": 391,
-      "height": 293
+      "name": "Im106.jpg",
+      "width": 290,
+      "height": 323
     },
     {
       "src": "assets/boletim-images/page-02-img-04.jpg",
       "page": 2,
-      "name": "Im100.jpg",
-      "width": 420,
-      "height": 315
+      "name": "Im107.jpg",
+      "width": 339,
+      "height": 313
     },
     {
       "src": "assets/boletim-images/page-02-img-05.jpg",
       "page": 2,
-      "name": "Im101.jpg",
-      "width": 399,
-      "height": 299
+      "name": "Im108.jpg",
+      "width": 343,
+      "height": 257
     },
     {
       "src": "assets/boletim-images/page-02-img-06.jpg",
       "page": 2,
-      "name": "Im102.jpg",
-      "width": 380,
-      "height": 319
+      "name": "Im109.jpg",
+      "width": 343,
+      "height": 257
     },
     {
       "src": "assets/boletim-images/page-02-img-07.jpg",
       "page": 2,
-      "name": "Im103.jpg",
-      "width": 419,
-      "height": 314
+      "name": "Im110.jpg",
+      "width": 354,
+      "height": 265
     },
     {
       "src": "assets/boletim-images/page-02-img-08.jpg",
       "page": 2,
-      "name": "Im104.jpg",
-      "width": 398,
-      "height": 298
+      "name": "Im111.jpg",
+      "width": 374,
+      "height": 249
     },
     {
       "src": "assets/boletim-images/page-02-img-09.jpg",
       "page": 2,
-      "name": "Im105.jpg",
-      "width": 426,
-      "height": 320
+      "name": "Im112.jpg",
+      "width": 327,
+      "height": 194
     },
     {
       "src": "assets/boletim-images/page-02-img-10.jpg",
       "page": 2,
-      "name": "Im106.jpg",
-      "width": 391,
-      "height": 293
+      "name": "Im113.jpg",
+      "width": 429,
+      "height": 297
     },
     {
       "src": "assets/boletim-images/page-02-img-11.jpg",
       "page": 2,
-      "name": "Im107.jpg",
+      "name": "Im114.jpg",
       "width": 447,
-      "height": 335
+      "height": 251
+    },
+    {
+      "src": "assets/boletim-images/page-02-img-12.jpg",
+      "page": 2,
+      "name": "Im115.jpg",
+      "width": 333,
+      "height": 188
+    },
+    {
+      "src": "assets/boletim-images/page-02-img-13.jpg",
+      "page": 2,
+      "name": "Im116.jpg",
+      "width": 339,
+      "height": 254
+    },
+    {
+      "src": "assets/boletim-images/page-02-img-14.jpg",
+      "page": 2,
+      "name": "Im117.jpg",
+      "width": 347,
+      "height": 195
+    },
+    {
+      "src": "assets/boletim-images/page-02-img-15.jpg",
+      "page": 2,
+      "name": "Im118.jpg",
+      "width": 332,
+      "height": 249
+    },
+    {
+      "src": "assets/boletim-images/page-02-img-16.jpg",
+      "page": 2,
+      "name": "Im119.jpg",
+      "width": 362,
+      "height": 199
+    },
+    {
+      "src": "assets/boletim-images/page-02-img-17.jpg",
+      "page": 2,
+      "name": "Im120.jpg",
+      "width": 360,
+      "height": 202
+    },
+    {
+      "src": "assets/boletim-images/page-02-img-18.jpg",
+      "page": 2,
+      "name": "Im121.jpg",
+      "width": 296,
+      "height": 222
+    },
+    {
+      "src": "assets/boletim-images/page-02-img-19.jpg",
+      "page": 2,
+      "name": "Im122.jpg",
+      "width": 341,
+      "height": 209
+    },
+    {
+      "src": "assets/boletim-images/page-02-img-20.jpg",
+      "page": 2,
+      "name": "Im123.jpg",
+      "width": 310,
+      "height": 198
+    },
+    {
+      "src": "assets/boletim-images/page-02-img-21.jpg",
+      "page": 2,
+      "name": "Im124.jpg",
+      "width": 361,
+      "height": 271
+    },
+    {
+      "src": "assets/boletim-images/page-02-img-22.jpg",
+      "page": 2,
+      "name": "Im125.jpg",
+      "width": 335,
+      "height": 193
+    },
+    {
+      "src": "assets/boletim-images/page-02-img-23.jpg",
+      "page": 2,
+      "name": "Im126.jpg",
+      "width": 352,
+      "height": 264
+    },
+    {
+      "src": "assets/boletim-images/page-02-img-24.jpg",
+      "page": 2,
+      "name": "Im127.jpg",
+      "width": 356,
+      "height": 267
     },
     {
       "src": "assets/boletim-images/page-03-img-03.jpg",
       "page": 3,
-      "name": "Im168.jpg",
-      "width": 546,
-      "height": 305
-    },
-    {
-      "src": "assets/boletim-images/page-03-img-04.jpg",
-      "page": 3,
-      "name": "Im169.jpg",
-      "width": 601,
-      "height": 338
+      "name": "Im188.jpg",
+      "width": 919,
+      "height": 534
     }
   ],
   "agenda": [
     {
-      "day": "Domingo 02/08",
+      "day": "Domingo 09/08",
       "items": [
         "08h - Ensaio Ministério de Louvor",
         "9h30 - Escola Bíblica dominical",
         "11h - Culto de Louvor",
         "16h - Ensaio Ministério de Louvor",
         "18h - Culto de Louvor",
+        "10/08 (Segunda-Feira)",
         "18h - Reunião Desperta Déboras",
         "19h - Ensaio Coral Jardora",
-        "19h - Célula nos Lares",
-        "19h - Célula nos Lares",
-        "19h - Célula nos Lares"
+        "19h30 - Célula nos Lares",
+        "19h30 - Célula nos Lares",
+        "19h30 - Célula nos Lares"
       ]
     },
     {
-      "day": "Domingo 09/08",
+      "day": "Domingo 16/08",
       "items": []
     }
   ],
   "birthdays": [
-    "02/08 - Geovanna Cobelas de Oliveira",
-    "03/08 - Karine Osório S. Martins",
-    "04/08- Bernardo Paixão Gerhardt",
-    "05/08- Maria Rosália Silva Silva",
-    "06/08- Mariana Alves Leal",
-    "07/08- Israel Becker Silveira Ferreira",
-    "08/08 - Ester de Jesus Paixão O. Carvalho"
+    "10/08 - Sheila Mendes P. Linhares",
+    "11/08- Rebeca Mello C. Stutz de Oliveira",
+    "12/08- André Luís Duncan Quintanilha",
+    "13/08- Lediléa da Mota Leal",
+    "14/08- Laura da Silva Ferreira",
+    "15/08- Alexandre Oliveira dos Santos"
   ],
   "contactsAndLeadership": [
     "COLÉGIO PRESBITERIANO DE MACAÉ",
@@ -371,60 +465,63 @@
     "Presb. André Curvelo",
     "Presb. Gleison Carlos",
     "AGENDA SEMANAANIVERSARIANTES",
-    "02/08/2026 a 08/08/2026",
+    "09/08/2026 a 15/08/2026",
     "Ore por esses irmãos:",
     "Aldenir, Aurendina, Carmita, Carlinda Cabral, Célia do Desterro, Carmen Cruz, Eﬁgênia,",
     "Guilhermina Alves, Ivan, Joel, Márcio Henrique, Magali (irmã de Sueli Carlos), Marizete,",
     "Nilce,do Carmo, Marinete, Marcos, Mônica, Orly, Tassiane Batista, Terezinha de Moraes (mãe de",
     "Suzy e Doriam), Hilda (tia de Suzy e Doriam), Marcelo (irmão de Ellen), Ronaldo, Solange N.",
     "Souza, Rev. José Roberto.",
-    "Domingo 02/08",
+    "Domingo 09/08",
     "Mesa Administrativa",
-    "02/08 (Domingo)",
+    "09/08 (Domingo)",
     "08h - Ensaio Ministério de Louvor",
     "9h30 - Escola Bíblica dominical",
     "11h - Culto de Louvor",
     "16h - Ensaio Ministério de Louvor",
     "18h - Culto de Louvor",
-    "03/08 (Segunda-Feira)",
+    "10/08 (Segunda-Feira)",
     "18h - Reunião Desperta Déboras",
     "19h - Ensaio Coral Jardora",
-    "04/08 (Terça-Feira)",
-    "19h - Célula nos Lares",
-    "05/08 (Quarta-Feira)",
-    "19h - Célula nos Lares",
-    "06/08 (Quinta-Feira)",
-    "19h - Célula nos Lares",
-    "02/08 - Geovanna Cobelas de Oliveira",
-    "Lindiane do Rosário Liger",
-    "03/08 - Karine Osório S. Martins",
-    "Gustavo Jaccoud Soares Barbosa",
-    "04/08- Bernardo Paixão Gerhardt",
-    "Iasmin Garcia Cardoso Pereira",
-    "05/08- Maria Rosália Silva Silva",
-    "Letícia de Paula da Silva",
-    "06/08- Mariana Alves Leal",
-    "07/08- Israel Becker Silveira Ferreira",
-    "Isaac Becker Silveira Ferreira",
-    "Juliana Alves de Moraes",
-    "08/08 - Ester de Jesus Paixão O. Carvalho",
-    "Ester Nascimento Moreira",
-    "João Gabriel M. dos Santos",
+    "11/08 (Terça-Feira)",
+    "19h30 - Célula nos Lares",
+    "12/08 (Quarta-Feira)",
+    "19h30 - Célula nos Lares",
+    "13/08 (Quinta-Feira)",
+    "19h30 - Célula nos Lares",
+    "09/08 – Evelyn Rodrigues Leal",
+    "10/08 - Sheila Mendes P. Linhares",
+    "Rafaela Alves",
+    "11/08- Rebeca Mello C. Stutz de Oliveira",
+    "Edson Vinícius Neno dos Santos",
+    "Eric Bersot Viana",
+    "12/08- André Luís Duncan Quintanilha",
+    "Fabiana Gonçalves Pinto",
+    "Regiane do Nascimento Yamaki",
+    "Júlia Sabará Lins",
+    "13/08- Lediléa da Mota Leal",
+    "Antônio Luís Valença G. da Silva",
+    "Brendon Vieira de Souza",
+    "14/08- Laura da Silva Ferreira",
+    "Joice Jaccoud Soares Barbosa",
+    "Sueli Bossan Moraes",
+    "15/08- Alexandre Oliveira dos Santos",
+    "Samuel Gomes Júnior",
     "CONSELHO",
     "NOSSA CONTA",
-    "Ministério Louvor: Marco André",
+    "Ministério Louvor: Moisés Maia",
     "Junta Diaconal:",
     "PIX: 29.252.103/0001-20 (CNPJ)",
-    "Everton, Matheus Schuenck, Paulo Pavani, Eraldo, Edson Vinícius, Antonio.",
+    "Rogério, Vitor Mothé, Rodrigo, Victor Ferreira, Gustavo, Marcos Daniel.",
     "MINISTÉRIO DESPERTA DÉBORA",
-    "Domingo 09/08",
-    "Ministério Louvor: Moisés Maia",
-    "Junta Diaconal:Rogério, Vitor Mothé, Rodrigo, Victor Ferreira, Gustavo, Marcos Daniel.",
-    "MDD de Macaé no aniversário da cidade!"
+    "Domingo 16/08",
+    "Ministério Louvor: Estevão Santos",
+    "Junta Diaconal:Marlino, Dario, Natan, Márcio, Carlos Eduardo, Vinner.",
+    "Nossa Reunião do dia 03/08/2026 na Igreja Presbiteriana Central de Macaé."
   ],
   "rawPages": [
-    "NOSSA VISÃO\nNOSSA MISSÃO\nNº 1884\nDomingo, 02 de agosto de 2026\nEscola Bíblica Dominical às 9h30\nCultos às 11h e 18h\nDurante a semana:\nAos Domingos:\nEncontro das Células nos lares\nSer uma igreja com uma fé \nv i v a e c o n t a g i a n t e , \nimpactando Macaé através \ndos grupos de comunhão e da \neducação, proclamando o \nEvangelho da graça para \ntransformar vidas.\nSer uma igreja bíblica e \nreformada, relevante e \ncontemporânea, que glorica \na Deus através da comunhão, \nação social e excelência no \nserviço, sendo uma agência \ndo Reino para um mundo \nmelhor.\n• Famílias fortes e unidas;\n• Integridade e relevância na \npregação;\n• Vida em comunhão numa \ncélula;\n• Oração como estilo de \nvida;\n• Excelência no exercício \ndos dons;\n• Criatividade na \ncomunicação do evangelho;\n• Formação e treinamento \nde liderança para a \nmultiplicação de discípulos.\nQUANDO DEUS NOS CONDUZ ALÉM DA LÓGICA, NOSSO CORAÇÃO É EXPOSTO \n E, chegando Faraó, os ﬁlhos de Israel levantaram os olhos, e eis que os egípcios vinham atrás deles, e \ntemeram muito; então, os ﬁlhos de Israel clamaram ao Senhor. Disseram a Moisés: Será, por não haver \nsepulcros no Egito, que nos tiraste de lá, para que morramos neste deserto? Por que nos trataste assim, \nfazendo-nos sair do Egito? Não é isso o que te dissemos no Egito: deixa-nos, para que sirvamos os egípcios? \nPois melhor nos fora servir aos egípcios do que morrermos no deserto. (Ex. 14. 10-12)\n O texto nos mostra que o povo de Israel se vê diante de uma realidade humanamente insolúvel: o mar à \nfrente, o exército de Faraó atrás, e nenhuma possibilidade de fuga. O texto revela que, quando Deus conduz seu \npovo a situações que ultrapassam a lógica humana, não apenas a providência divina é evidenciada, mas também o \ncoração humano é exposto em sua fragilidade.\nAo levantarem os olhos e perceberem a aproximação dos egípcios, os ﬁlhos de Israel são tomados por \ngrande temor. O medo, aqui, não é apenas uma reação emocional; ele se torna o cenário onde a incredulidade se \nmanifesta. Em vez de conﬁança no Deus que já os libertara com mão poderosa, o povo reage com murmuração e \ndistorção da realidade. Eles reinterpretam a história da redenção como um erro trágico, chegando ao ponto de \ndesejar retornar à escravidão, aﬁrmando que seria melhor servir aos egípcios do que morrer no deserto.\nNesta passagem, a Escritura expõe com clareza uma verdade central da antropologia bíblica reformada: o \ncoração humano, mesmo diante das obras claras de Deus, permanece inclinado à incredulidade e à \nautossuﬁciência. A prova não é para informar a Deus, pois Ele conhece perfeitamente o coração humano, mas para \nrevelar ao próprio homem sua dependência absoluta da graça divina.\nAssim, o problema de Israel não é geográﬁco, mas espiritual. Não é a presença do exército egípcio que os \nderrota interiormente, mas a ausência de fé viva no Deus que prometeu libertação. A murmuração contra Moisés \nrevela, em última análise, uma murmuração contra o próprio Senhor que os conduziu até aquele lugar. Portanto, \nquando Deus nos conduz além da lógica, Ele não apenas manifesta sua soberania externa na condução da história, \nmas também realiza uma obra interna de revelação: expõe a insuﬁciência da nossa fé e a necessidade contínua de \ndependência dEle. O deserto, nesse sentido, não é apenas um lugar de provação circunstancial, mas de diagnóstico \nespiritual. O texto nos ensina, portanto, que diante das impossibilidades, o problema não está na ﬁdelidade de \nDeus, mas na instabilidade do nosso coração e é exatamente aí que a graça se torna indispensável.\nEsse texto nos mostra que não estamos apenas observando Israel no deserto; estamos sendo \nconfrontados com o reﬂexo da própria igreja hoje. O mesmo coração que murmurou diante do mar ainda habita \nem nós quando Deus nos conduz a cenários que fogem do nosso controle.\nQuando Deus fecha portas que considerávamos seguras, quando relacionamentos, planos proﬁssionais \nou expectativas pessoais são frustrados, a tendência natural do coração ainda é a mesma: medo, questionamento \ne, muitas vezes, murmuração. Assim como Israel, somos tentados a reinterpretar a ﬁdelidade de Deus à luz da crise \npresente, como se o passado da graça não tivesse peso suﬁciente para sustentar a fé no presente.\nEm muitas pessoas hoje, isso aparece de maneira sutil. Há uma fé que funciona enquanto as circunstâncias \nsão favoráveis, mas que entra em colapso quando Deus os conduz por caminhos que exigem dependência \nprofunda. A lógica do coração humano ainda diz: “era melhor antes”, “talvez Deus tenha errado”, ou “isso não \ndeveria estar acontecendo comigo”. O deserto moderno não é geográﬁco, mas existencial, são os momentos de \nperda de controle, de silêncio de Deus, de espera prolongada, de portas fechadas.\nO texto nos confronta com uma realidade dura, porém necessária: a crise não cria incredulidade, apenas \nrevela aquilo que já estava presente. Por isso, Deus muitas vezes nos conduz a situações em que nossas seguranças \nsão removidas, não para nos destruir, mas para nos ensinar a depender dEle de maneira mais profunda. A \ninstabilidade que sentimos não está em Deus, mas em nossa própria fé ainda imatura.\nPara a igreja hoje, isso é um chamado ao arrependimento de uma fé condicionada às circunstâncias. \nSomos chamados a abandonar a espiritualidade baseada em conforto e a aprender a conﬁar na providência \nmesmo quando ela não parece lógica. O Deus que guiou Israel ao mar é o mesmo que guia sua igreja hoje — e Ele \nnão perdeu o controle da história. Assim, a aplicação do texto não é apenas reconhecer que às vezes duvidamos, \nmas entender que, em Cristo, somos chamados a uma fé que permanece mesmo quando não compreende. Uma fé \nque não se apoia na estabilidade das circunstâncias, mas na ﬁdelidade imutável de Deus.\nRev. Ivanilson Silva",
-    "Vida em\ncomunidade\nViver em comunidade uma fé contagiante.\n NOSSOS ENCONTROS - CÉLULAS \n4\nCélula 19\nCélula 05\nCélula 02\nCélula 21\nCélula 04 Célula 28\nCélula 18\nCélula 06 Célula 24\nCélula 07 Célula 29",
-    "COLÉGIO PRESBITERIANO DE MACAÉ\nJUNTA DIACONAL\nCONGREGAÇÃO PRESBITERIANA\nDE QUISSAMÃ\nCETH \nCENTRO DE TRANSFORMAÇÃO HUMANA\nSOCIEDADES INTERNAS\nUPH - União Presbiteriana de Homens\nSAF - Sociedade Auxiliadora Feminina\nUMP - União de Mocidade Presbiteriana\nUPA - União Presbiteriana de Adolescentes\nIGREJA PRESBITERIANA DE MACAÉ\nDiácono. Isaías do Desterro\n Diretora: Cristina Pereira\nRua Velho Campos, 920 - Centro\nMacaé/RJ - CEP: 27910-210\nFone: (22) 2762-4389\nLarissa Monteiro de Andrade\n Dc. Everton Esdras da Silva Benedikt\n Débora de Oliveira Souza da Fonseca\n Raphael Tavares Almeida Barreto\n Noanh Ferrazis\nRev. Ivanilson da Silva\nPresidente\nRev. Samuel Gomes Júnior\nPastor Auxiliar\nEstevão SantosPresb. \nVice-Presidente\nPresb. Alexandre Koury\nSecretário\nPresb. Wagner Marcílio\nPresb. Francisco Assis de Souza\nPresb. Roberto Petronilha\nPresb. Paulo de Tarso Fernandes\nPresb. Célio de Aguiar Thomaz\nPresb. Gleison Nascimento Carlos \nPresb. André Curvelo\n Diácono Brendon \nPresb. André Curvelo\nPresb. Gleison Carlos\nAGENDA SEMANAANIVERSARIANTES\n02/08/2026 a 08/08/2026\nOre por esses irmãos: \nAldenir, Aurendina, Carmita, Carlinda Cabral, Célia do Desterro, Carmen Cruz, Eﬁgênia, \nGuilhermina Alves, Ivan, Joel, Márcio Henrique, Magali (irmã de Sueli Carlos), Marizete, \nNilce,do Carmo, Marinete, Marcos, Mônica, Orly, Tassiane Batista, Terezinha de Moraes (mãe de \nSuzy e Doriam), Hilda (tia de Suzy e Doriam), Marcelo (irmão de Ellen), Ronaldo, Solange N. \nSouza, Rev. José Roberto. \nDomingo 02/08\n \nMesa Administrativa\n02/08 (Domingo)\n08h - Ensaio Ministério de Louvor\n9h30 - Escola Bíblica dominical\n11h - Culto de Louvor \n16h - Ensaio Ministério de Louvor\n18h - Culto de Louvor \n \n03/08 (Segunda-Feira) \n18h - Reunião Desperta Déboras\n19h - Ensaio Coral Jardora\n 04/08 (Terça-Feira) \n 19h - Célula nos Lares\n05/08 (Quarta-Feira) \n19h - Célula nos Lares\n06/08 (Quinta-Feira) \n19h - Célula nos Lares\n02/08 - Geovanna Cobelas de Oliveira\n Lindiane do Rosário Liger \n03/08 - Karine Osório S. Martins \n Gustavo Jaccoud Soares Barbosa \n04/08- Bernardo Paixão Gerhardt \n Iasmin Garcia Cardoso Pereira \n05/08- Maria Rosália Silva Silva \n Letícia de Paula da Silva \n06/08- Mariana Alves Leal \n07/08- Israel Becker Silveira Ferreira \n Isaac Becker Silveira Ferreira\n Juliana Alves de Moraes \n08/08 - Ester de Jesus Paixão O. Carvalho\n Ester Nascimento Moreira\n João Gabriel M. dos Santos \n \n \n \n \n \n \n \n \n \n \n \n \nCONSELHO\nNOSSA CONTA\n Ministério Louvor: Marco André\nJunta Diaconal:\nPIX: 29.252.103/0001-20 (CNPJ)\nEverton, Matheus Schuenck, Paulo Pavani, Eraldo, Edson Vinícius, Antonio. \n MINISTÉRIO DESPERTA DÉBORA \nDomingo 09/08\n Ministério Louvor: Moisés Maia\nJunta Diaconal:Rogério, Vitor Mothé, Rodrigo, Victor Ferreira, Gustavo, Marcos Daniel.\nMDD de Macaé no aniversário da cidade!"
+    "NOSSA VISÃO\nNOSSA MISSÃO\nNº 1885\nDomingo, 09 de agosto de 2026\nEscola Bíblica Dominical às 9h30\nCultos às 11h e 18h\nDurante a semana:\nAos Domingos:\nEncontro das Células nos lares\nSer uma igreja com uma fé \nv i v a e c o n t a g i a n t e , \nimpactando Macaé através \ndos grupos de comunhão e da \neducação, proclamando o \nEvangelho da graça para \ntransformar vidas.\nSer uma igreja bíblica e \nreformada, relevante e \ncontemporânea, que glorica \na Deus através da comunhão, \nação social e excelência no \nserviço, sendo uma agência \ndo Reino para um mundo \nmelhor.\n• Famílias fortes e unidas;\n• Integridade e relevância na \npregação;\n• Vida em comunhão numa \ncélula;\n• Oração como estilo de \nvida;\n• Excelência no exercício \ndos dons;\n• Criatividade na \ncomunicação do evangelho;\n• Formação e treinamento \nde liderança para a \nmultiplicação de discípulos.\nA RESPONSABILIDADE PATERNA EM TRANSMITIR A FÉ \nÀ PRÓXIMA GERAÇÃO\n“tu as inculcarás a teus ﬁlhos, e delas falarás assentado em tua casa, e andando pelo \ncaminho, e ao deitar-te, e ao levantar-te” Deuteronômio 6.7\nEm Deuteronômio 6, Moisés se dirige ao povo às vésperas da entrada na Terra Prometida. \nAntes de falar sobre conquistas, prosperidade ou segurança, ele enfatiza algo muito mais \nimportante: a ﬁdelidade ao Senhor deveria ser preservada por meio do ensino contínuo dentro \ndo lar.\nO versículo 7 nos apresenta um princípio que permanece atual. A ordem não é \nsimplesmente ensinar informações sobre Deus, mas inculcar sua Palavra no coração dos ﬁlhos. \nO verbo utilizado transmite a ideia de repetir com diligência, gravar profundamente, insistir até \nque a verdade seja assimilada. A formação espiritual não acontece por acaso; ela exige \ndedicação, perseverança e testemunho. O primeiro ambiente de discipulado não é a igreja, a \nescola ou qualquer ministério infantil. É o lar. Deus conﬁou aos pais, a missão de serem os \nlíderes espirituais da família, a missão de conduzir seus ﬁlhos no conhecimento do Senhor. A \nigreja auxilia, orienta e coopera, mas jamais substitui a responsabilidade paterna.\nObserve que Moisés descreve um ensino que permeia toda a vida: \"assentado em tua \ncasa\", \"andando pelo caminho\", \"ao deitar-te\" e \"ao levantar-te\". A fé não deve ser limitada ao \nculto dominical ou ao momento do devocional. Ela precisa estar presente nas conversas \ncotidianas, nas decisões familiares, na maneira de enfrentar diﬁculdades, na prática do perdão, \nno uso dos recursos, na forma de tratar o próximo e, acima de tudo, no exemplo diário dos pais.\nOs ﬁlhos aprendem muito mais pelo que observam do que apenas pelo que ouvem. Um \npai que ama a Palavra, ora com sua família, participa ﬁelmente da vida da igreja, demonstra \narrependimento quando erra e vive em dependência de Cristo, deixa um legado que ultrapassa \ngerações. Infelizmente, muitos pais têm delegado essa missão a terceiros. Esperam que a igreja, \na escola cristã ou os líderes de ministérios façam aquilo que Deus conﬁou prioritariamente ao \nlar. Entretanto, nenhuma programação eclesiástica consegue substituir uma vida de piedade \ncultivada diariamente dentro de casa.\nNenhum pai é perfeito. Todos falhamos. Nossa esperança, porém, não repousa em nossa \ncapacidade, mas na graça de Deus, aquele que nunca falha. Contudo, há misericórdia para \naqueles que se arrependem, buscam o Senhor e retomam, com humildade, sua vocação de \nconduzir a família no caminho da verdade.\nQue os pais de nossa igreja compreendam que seu maior legado não será um patrimônio, \numa proﬁssão ou uma herança material, mas ﬁlhos que conheçam, amem e sirvam ao Senhor \nJesus Cristo. Que nossas casas sejam escolas de piedade, lugares onde a Palavra é lida, ensinada, \nvivida e celebrada diariamente. Que o Senhor fortaleça nossos lares e conceda aos pais \nsabedoria, perseverança e graça para transmitir ﬁelmente a fé à próxima geração.\nRev. Samuel Gomes",
+    "Vida em\ncomunidade\nViver em comunidade uma fé contagiante.\n NOSSOS ENCONTROS - CÉLULAS \n4\nCélula 11 Célula 06Célula 02 Célula 15\nCélula 03 Célula 20\nCélula 28Célula 24 Célula 29 Célula 26\nCélula 04\n Célula 23\nCélula 12 Célula 21 Célula 07 Célula 10\nCélula 15 Célula 18 Célula 09 Célula 05\nCélula 25 Célula 27 Célula 13 Célula 08",
+    "COLÉGIO PRESBITERIANO DE MACAÉ\nJUNTA DIACONAL\nCONGREGAÇÃO PRESBITERIANA\nDE QUISSAMÃ\nCETH \nCENTRO DE TRANSFORMAÇÃO HUMANA\nSOCIEDADES INTERNAS\nUPH - União Presbiteriana de Homens\nSAF - Sociedade Auxiliadora Feminina\nUMP - União de Mocidade Presbiteriana\nUPA - União Presbiteriana de Adolescentes\nIGREJA PRESBITERIANA DE MACAÉ\nDiácono. Isaías do Desterro\n Diretora: Cristina Pereira\nRua Velho Campos, 920 - Centro\nMacaé/RJ - CEP: 27910-210\nFone: (22) 2762-4389\nLarissa Monteiro de Andrade\n Dc. Everton Esdras da Silva Benedikt\n Débora de Oliveira Souza da Fonseca\n Raphael Tavares Almeida Barreto\n Noanh Ferrazis\nRev. Ivanilson da Silva\nPresidente\nRev. Samuel Gomes Júnior\nPastor Auxiliar\nEstevão SantosPresb. \nVice-Presidente\nPresb. Alexandre Koury\nSecretário\nPresb. Wagner Marcílio\nPresb. Francisco Assis de Souza\nPresb. Roberto Petronilha\nPresb. Paulo de Tarso Fernandes\nPresb. Célio de Aguiar Thomaz\nPresb. Gleison Nascimento Carlos \nPresb. André Curvelo\n Diácono Brendon \nPresb. André Curvelo\nPresb. Gleison Carlos\nAGENDA SEMANAANIVERSARIANTES\n09/08/2026 a 15/08/2026\nOre por esses irmãos: \nAldenir, Aurendina, Carmita, Carlinda Cabral, Célia do Desterro, Carmen Cruz, Eﬁgênia, \nGuilhermina Alves, Ivan, Joel, Márcio Henrique, Magali (irmã de Sueli Carlos), Marizete, \nNilce,do Carmo, Marinete, Marcos, Mônica, Orly, Tassiane Batista, Terezinha de Moraes (mãe de \nSuzy e Doriam), Hilda (tia de Suzy e Doriam), Marcelo (irmão de Ellen), Ronaldo, Solange N. \nSouza, Rev. José Roberto. \nDomingo 09/08\n \nMesa Administrativa\n09/08 (Domingo)\n08h - Ensaio Ministério de Louvor\n9h30 - Escola Bíblica dominical\n11h - Culto de Louvor \n16h - Ensaio Ministério de Louvor\n18h - Culto de Louvor \n \n10/08 (Segunda-Feira) \n18h - Reunião Desperta Déboras\n19h - Ensaio Coral Jardora\n 11/08 (Terça-Feira) \n 19h30 - Célula nos Lares\n12/08 (Quarta-Feira) \n19h30 - Célula nos Lares\n13/08 (Quinta-Feira) \n19h30 - Célula nos Lares\n09/08 – Evelyn Rodrigues Leal \n10/08 - Sheila Mendes P. Linhares \n Rafaela Alves \n11/08- Rebeca Mello C. Stutz de Oliveira \n Edson Vinícius Neno dos Santos\n Eric Bersot Viana \n12/08- André Luís Duncan Quintanilha \n Fabiana Gonçalves Pinto \n Regiane do Nascimento Yamaki\n Júlia Sabará Lins \n13/08- Lediléa da Mota Leal \n Antônio Luís Valença G. da Silva\n Brendon Vieira de Souza \n14/08- Laura da Silva Ferreira \n Joice Jaccoud Soares Barbosa\n Sueli Bossan Moraes \n15/08- Alexandre Oliveira dos Santos \n Samuel Gomes Júnior \n \n \n \n \n \n \n \n \n \n \n \n \nCONSELHO\nNOSSA CONTA\n Ministério Louvor: Moisés Maia\nJunta Diaconal:\nPIX: 29.252.103/0001-20 (CNPJ)\nRogério, Vitor Mothé, Rodrigo, Victor Ferreira, Gustavo, Marcos Daniel. \n MINISTÉRIO DESPERTA DÉBORA \nDomingo 16/08\n Ministério Louvor: Estevão Santos\nJunta Diaconal:Marlino, Dario, Natan, Márcio, Carlos Eduardo, Vinner.\nNossa Reunião do dia 03/08/2026 na Igreja Presbiteriana Central de Macaé."
   ]
 }

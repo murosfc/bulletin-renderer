@@ -181,6 +181,7 @@ body::before {
   color: var(--color-primary);
   margin-bottom: 1rem;
   letter-spacing: -0.02em;
+  overflow-wrap: break-word;
 }
 
 .hero .passage {
