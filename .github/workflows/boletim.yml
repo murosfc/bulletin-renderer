@@ -16,6 +16,7 @@ on:
 permissions:
   contents: write
   id-token: write
+  issues: write
 
 concurrency:
   group: boletim
@@ -104,3 +105,29 @@ jobs:
           ISSUE=$(python -c "import json; print(json.load(open('data/boletim.json'))['meta'].get('issue',''))" 2>/dev/null || echo "")
           git commit -m "chore: atualiza boletim${ISSUE:+ para edição Nº $ISSUE} (automático)"
           git push
+
+      - name: Abrir issue em caso de falha
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          TITLE="🚨 Falha na atualização automática do boletim"
+          BODY="O workflow **Atualizar Boletim** falhou em $(date -u '+%d/%m/%Y %H:%M UTC').
+
+          **Run com os logs:** $RUN_URL
+
+          Causas mais prováveis:
+          - \`ANTHROPIC_API_KEY\` inválida, revogada ou **sem créditos** (verifique em console.anthropic.com → Billing)
+          - \`CLAUDE_CODE_OAUTH_TOKEN\` revogado (se estiver em uso)
+          - PDF inacessível na URL informada
+          - Erro do agente durante a atualização (ver logs)
+
+          Enquanto isso, o site continua no ar com a última edição publicada."
+          gh label create automacao --color D93F0B --description "Falhas da automação do boletim" --repo "$GITHUB_REPOSITORY" 2>/dev/null || true
+          EXISTING=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --label automacao --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --repo "$GITHUB_REPOSITORY" --body "$BODY"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$TITLE" --label automacao --body "$BODY"
+          fi
