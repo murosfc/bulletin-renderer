@@ -92,12 +92,6 @@ jobs:
           path: screenshots/
           if-no-files-found: ignore
 
-      - name: Configurar credenciais do Git
-        run: |
-          git config --global url."https://x-access-token:${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-
       - name: Commit e push
         env:
           GIT_AUTHOR_NAME: github-actions[bot]
@@ -115,7 +109,12 @@ jobs:
           fi
           ISSUE=$(python -c "import json; print(json.load(open('data/boletim.json'))['meta'].get('issue',''))" 2>/dev/null || echo "")
           git commit -m "chore: atualiza boletim${ISSUE:+ para edição Nº $ISSUE} (automático)"
-          git push origin main
+
+      - name: Push com GitHub Actions Bot
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ github.token }}
+          branch: main
 
       - name: Abrir issue em caso de falha
         if: failure()
