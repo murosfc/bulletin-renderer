@@ -561,20 +561,17 @@ body::before {
 
 .gallery-item-footer {
   position: absolute;
-  bottom: 0.75rem;
-  left: 0.75rem;
+  bottom: 0.6rem;
+  left: 0.6rem;
   color: #FFFFFF;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 600;
   z-index: 2;
-  opacity: 0;
-  transition: var(--transition);
-  transform: translateY(4px);
-}
-
-.gallery-item:hover .gallery-item-footer {
-  opacity: 1;
-  transform: translateY(0);
+  background: rgba(17, 47, 43, 0.72);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--border-radius-sm);
+  backdrop-filter: blur(2px);
+  letter-spacing: 0.01em;
 }
 
 /* Lightbox */
@@ -937,16 +934,6 @@ body::before {
   .hero-times {
     flex-direction: column;
     align-items: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .gallery-item-footer {
-    opacity: 1;
-    transform: translateY(0);
-    background: rgba(17, 47, 43, 0.75);
-    padding: 0.2rem 0.55rem;
-    border-radius: var(--border-radius-sm);
   }
 }
 

@@ -61,7 +61,27 @@ Abra o arquivo de texto extraído (`scratch_extracted_text.txt`) e identifique a
    - Grid de aniversariantes da semana.
    - Linhas do cronograma da Agenda Semanal.
    - Galeria de imagens `gallery-grid` (verifique quantas imagens foram extraídas no passo 1 e insira as tags correspondentes com `data-src` apontando para `assets/boletim-images/page-02-img-XX.jpg`).
-   - **Legendas das Fotos (SEMPRE VERIFICAR)**: As fotos da galeria costumam ter uma legenda associada no layout original do PDF (ex.: "Célula 19", "Célula 05" abaixo de cada foto), que normalmente **não** vem embutida na imagem extraída — ela é um texto solto na página, capturado separadamente em `rawPages`/`community.summary` no JSON. Antes de escrever `gallery-item-footer` genéricos como "Encontros das Células", procure no texto da página (ex.: uma lista sequencial "Célula 19 / Célula 05 / Célula 02 / ...") e associe cada legenda à foto correspondente pela ordem de extração (`page-02-img-01`, `-02`, `-03`...). Confirme a correspondência abrindo pelo menos uma das fotos com o Read tool: se houver um número visível na própria imagem (camisa, faixa, cartaz), ele deve bater com a legenda daquela posição na lista. Só use uma legenda genérica se não houver nenhuma lista de legendas extraída do PDF.
+   - **Legendas das Fotos em formato de badge (SEMPRE VERIFICAR)**: As fotos da galeria costumam ter uma legenda associada no layout original do PDF (ex.: "Célula 19", "Célula 05" abaixo de cada foto), que normalmente **não** vem embutida na imagem extraída — ela é um texto solto na página, capturado separadamente em `rawPages`/`community.summary` no JSON. Quando existir essa legenda, insira um `<div class="gallery-item-footer">Célula NN</div>` logo após a tag `<img>` dentro de cada `.gallery-item` — o CSS já renderiza isso como um badge escuro sempre visível no canto inferior esquerdo da foto (não é um efeito de hover). **Se a página não tiver nenhuma legenda associada às fotos, não insira `gallery-item-footer` nenhum** (não invente legendas genéricas).
+
+     ⚠️ **NÃO assuma que a ordem das legendas no texto extraído (`rawPages`) bate com a ordem sequencial dos arquivos `page-02-img-01`, `-02`, `-03`...** — já testamos isso na edição 1884 e as duas ordens de extração (texto do PDF e `page.images` do pypdf) vêm **embaralhadas** em relação à posição visual real da foto na página. Associar por ordem sequencial gera legenda errada silenciosamente (foi o motivo do commit `0b9328b` ter removido todas as legendas antes). O único método confiável é casar cada legenda com sua foto pela **posição geométrica real** no PDF, assim:
+
+     1. Renderize a página em questão (normalmente página 2) como imagem para enxergar o grid real e a ordem visual das legendas (topo→baixo, esquerda→direita). Use PyMuPDF (`pip install pymupdf` se não estiver instalado):
+        ```python
+        import fitz  # pip install pymupdf
+        doc = fitz.open("boletim.pdf")
+        page = doc[1]  # página 2 (índice 0-based)
+        page.get_pixmap(dpi=150).save("scratch_page2.png")
+        ```
+        Abra `scratch_page2.png` com o Read tool e leia visualmente qual legenda fica sob qual foto, na ordem de leitura (linha a linha, esquerda para direita).
+     2. Pegue a posição (bounding box) e as dimensões em pixel de cada imagem da mesma página:
+        ```python
+        for info in page.get_image_info(xrefs=True):
+            print(info["xref"], info["bbox"], info["width"], info["height"])
+        ```
+        Ordene os resultados por `(y0, x0)` do bbox — essa ordem é a ordem visual real (linha a linha) e deve bater com a lista de legendas lida no passo 1. Isso te dá `xref → legenda`.
+     3. Para saber a qual arquivo `page-02-img-XX.jpg` (gerado por `scripts/generate_boletim_json.py`) cada `xref` corresponde, compare as dimensões em pixel: `width`/`height` do `get_image_info` (passo 2) contra `PIL.Image.open(caminho).size` de cada arquivo extraído. As dimensões batem exatamente (mesma imagem, apenas re-extraída por bibliotecas diferentes) e isso resolve a maioria dos casos.
+     4. Se duas fotos tiverem exatamente a mesma largura/altura (empate), desambigue recortando a região do `xref` no PNG renderizado no passo 1 (usando o bbox × `dpi/72` como fator de escala) e comparando visualmente essa área com os arquivos candidatos via Read tool.
+     5. Só depois de montar o mapeamento completo (`page-02-img-XX.jpg → "Célula NN"`), escreva os `gallery-item-footer` no HTML.
    - Foto e aviso do Ministério Desperta Débora (ou outro ministério que esteja na página 3).
    - Lista de tags dos Pedidos de Oração.
    - Organograma de liderança (verifique se há alterações nos nomes de Pastores, Presbíteros ou Diáconos, e também atualize os Presidentes das Sociedades Internas UPH/SAF/UMP/UPA e o Responsável pelo CETH conforme extraídos do PDF).
@@ -80,6 +100,7 @@ Abra o arquivo de texto extraído (`scratch_extracted_text.txt`) e identifique a
    - Se o layout está perfeitamente alinhado.
    - Se o botão de copiar a chave PIX funciona.
    - Se o lightbox de imagens carrega e fecha normalmente.
+   - **Se houver legendas de célula**: tire um screenshot da `.gallery-section` (ex.: com Playwright, já que não há `chromium-cli` neste ambiente Windows) e compare badge a badge com o PNG renderizado do PDF no Passo 3 — cada legenda precisa estar sobre a foto certa, não só "presente".
 3. Apresente o resultado final e as capturas de tela para o usuário.
 
 ### Diretriz Permanente de Leitura no Mobile
