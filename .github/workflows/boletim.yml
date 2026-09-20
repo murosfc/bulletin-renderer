@@ -92,6 +92,9 @@ jobs:
           path: screenshots/
           if-no-files-found: ignore
 
+      - name: Validar render antes do commit
+        run: python scripts/validate_boletim.py
+
       - name: Commit e push
         env:
           GIT_AUTHOR_NAME: github-actions[bot]
@@ -141,3 +144,21 @@ jobs:
           else
             gh issue create --repo "$GITHUB_REPOSITORY" --title "$TITLE" --label automacao --body "$BODY"
           fi
+
+      - name: Enviar alerta por e-mail
+        if: failure()
+        continue-on-error: true
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          ALERT_FROM: ${{ secrets.BOLETIM_ALERT_FROM }}
+          ALERT_TO: "muros@yahoo.com.br"
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if [ -z "$RESEND_API_KEY" ] || [ -z "$ALERT_FROM" ]; then
+            echo "::warning::Alerta de e-mail nao configurado: defina RESEND_API_KEY e BOLETIM_ALERT_FROM"
+            exit 0
+          fi
+          curl --fail-with-body -sS https://api.resend.com/emails \
+            -H "Authorization: Bearer $RESEND_API_KEY" \
+            -H "Content-Type: application/json" \
+            -d "$(python -c 'import json, os; print(json.dumps({"from": os.environ["ALERT_FROM"], "to": [os.environ["ALERT_TO"]], "subject": "Falha no render do boletim", "text": "O workflow de atualizacao do boletim falhou. Consulte os logs: " + os.environ["RUN_URL"]}))')"

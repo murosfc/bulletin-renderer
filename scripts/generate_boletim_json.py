@@ -107,16 +107,13 @@ def is_logo_image(width: int, height: int, extension: str) -> bool:
     if width <= 0 or height <= 0:
         return False
 
-    area = width * height
     ratio = max(width / height, height / width)
 
     if width <= 220 and height <= 220:
         return True
-    if area <= 50000:
-        return True
     if (height < 120 and width > 420) or (width < 120 and height > 420):
         return True
-    if ratio >= 8 and area < 220000:
+    if ratio >= 8:
         return True
 
     # Logotipos vetoriais do rodape/cabecalho costumam vir como faixas PNG muito largas.

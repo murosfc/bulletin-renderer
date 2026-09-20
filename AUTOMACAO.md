@@ -17,6 +17,9 @@ Upload semanal do PDF → Firebase (onDocumentCreated no projeto ipmacae)
   `workflow_dispatch` para testes.
 - As capturas de tela da validação ficam disponíveis como artifact
   (`validacao-boletim`) em cada execução, junto com um `RESUMO.md` do que mudou.
+- Antes do commit, `scripts/validate_boletim.py` confere a assinatura do PDF,
+  os campos essenciais do JSON e todos os assets referenciados pelo HTML.
+  Quando algo falha, o commit e o deploy são bloqueados.
 
 **Secret necessário no repositório** (Settings → Secrets and variables →
 Actions) — basta UM dos dois:
@@ -104,6 +107,19 @@ apenas ao repositório `murosfc/bulletin-renderer` e permissão
    "Run workflow" → cole qualquer URL pública/assinada de um PDF de boletim.
 2. **Ponta a ponta:** faça o upload semanal normalmente e acompanhe a execução
    na aba Actions; ao final, confira o commit na main e o deploy da Vercel.
+
+## Alerta por e-mail
+
+Em caso de falha, o workflow envia um alerta pelo Resend e também abre ou
+comenta uma issue no GitHub. Cadastre estes secrets em Settings → Secrets and
+variables → Actions:
+
+- `RESEND_API_KEY`: chave da API do Resend.
+- `BOLETIM_ALERT_FROM`: remetente verificado no Resend, por exemplo
+  `boletim@seu-dominio.com`.
+
+O destinatário configurado é `muros@yahoo.com.br`. O endereço originalmente
+informado como `muros@yahoo.com.b` não é um endereço válido.
 
 ## Solução de problemas
 
