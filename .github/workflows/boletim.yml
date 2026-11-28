@@ -25,7 +25,9 @@ concurrency:
 jobs:
   atualizar:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    # Cabe a espera pelo reset do limite de 5h da assinatura Claude (ver o
+    # passo "Atualizar landing page com Claude Code").
+    timeout-minutes: 360
     steps:
       - uses: actions/checkout@v4
 
@@ -45,16 +47,20 @@ jobs:
           pip install --quiet pypdf pillow playwright
           python -m playwright install --with-deps chromium
 
+      - name: Instalar Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      # O PDF já foi baixado, então dá para esperar: se a assinatura Claude
+      # bater o limite de uso (429/529), tenta de novo a cada 15 min por até
+      # ~5h, o tempo do reset da janela de 5h. Qualquer outro erro falha na hora.
       - name: Atualizar landing page com Claude Code
-        uses: anthropics/claude-code-action@v1
-        with:
-          # Basta UM dos dois secrets: CLAUDE_CODE_OAUTH_TOKEN (assinatura
-          # Claude Pro/Max, gerado com `claude setup-token`) ou
-          # ANTHROPIC_API_KEY (API paga do console.anthropic.com).
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          show_full_output: true
-          prompt: |
+        id: claude
+        env:
+          # Token da assinatura Claude Pro/Max, gerado com `claude setup-token`.
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          RETRY_WINDOW_MINUTES: 290
+          RETRY_WAIT_SECONDS: 900
+          PROMPT: |
             Um novo boletim.pdf acabou de ser colocado na raiz do repositório.
             Siga rigorosamente as instruções de UPDATE.md e CLAUDE.md para
             atualizar a landing page:
@@ -82,7 +88,42 @@ jobs:
             Se o PDF estiver ilegível ou radicalmente diferente do padrão,
             descreva o problema em ./screenshots/RESUMO.md e não altere o
             index.html.
-          claude_args: '--allowedTools "Bash,Edit,Write,Read,Glob,Grep" --max-turns 100'
+        run: |
+          deadline=$(( $(date +%s) + RETRY_WINDOW_MINUTES * 60 ))
+          attempt=1
+          while true; do
+            echo "::group::Tentativa $attempt"
+            set +e
+            claude -p "$PROMPT" \
+              --allowedTools "Bash,Edit,Write,Read,Glob,Grep" \
+              --max-turns 100 \
+              --output-format json > claude-result.json
+            code=$?
+            set -e
+            jq 'del(.modelUsage)' claude-result.json || cat claude-result.json
+            echo "::endgroup::"
+
+            if [ "$code" -eq 0 ] && [ "$(jq -r '.is_error' claude-result.json)" = "false" ]; then
+              echo "Claude concluiu na tentativa $attempt."
+              exit 0
+            fi
+
+            if ! grep -qE 'usage_limit_reached|rate_limit_error|overloaded_error|"api_error_status": *(429|529)' claude-result.json; then
+              echo "::error::Claude falhou: $(jq -r '.result // "sem detalhes"' claude-result.json)"
+              echo "reason=erro do agente durante a atualização" >> "$GITHUB_OUTPUT"
+              exit 1
+            fi
+
+            if [ $(( $(date +%s) + RETRY_WAIT_SECONDS )) -gt "$deadline" ]; then
+              echo "::error::Limite de uso do Claude não liberou após $attempt tentativas."
+              echo "reason=limite de uso do Claude não liberou após $attempt tentativas" >> "$GITHUB_OUTPUT"
+              exit 1
+            fi
+
+            echo "::warning::Limite de uso do Claude ($(jq -r '.result' claude-result.json)). Nova tentativa em $(( RETRY_WAIT_SECONDS / 60 )) min."
+            sleep "$RETRY_WAIT_SECONDS"
+            attempt=$(( attempt + 1 ))
+          done
 
       - name: Publicar capturas de tela e resumo (artifact)
         if: always()
@@ -102,7 +143,7 @@ jobs:
           GIT_COMMITTER_NAME: github-actions[bot]
           GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
         run: |
-          rm -rf screenshots
+          rm -rf screenshots claude-result.json
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
@@ -131,8 +172,8 @@ jobs:
           **Run com os logs:** $RUN_URL
 
           Causas mais prováveis:
-          - \`ANTHROPIC_API_KEY\` inválida, revogada ou **sem créditos** (verifique em console.anthropic.com → Billing)
-          - \`CLAUDE_CODE_OAUTH_TOKEN\` revogado (se estiver em uso)
+          - Limite de uso da assinatura Claude esgotado mesmo após as novas tentativas
+          - \`CLAUDE_CODE_OAUTH_TOKEN\` revogado ou expirado (gere outro com \`claude setup-token\`)
           - PDF inacessível na URL informada
           - Erro do agente durante a atualização (ver logs)
 
@@ -145,20 +186,19 @@ jobs:
             gh issue create --repo "$GITHUB_REPOSITORY" --title "$TITLE" --label automacao --body "$BODY"
           fi
 
-      - name: Enviar alerta por e-mail
+      # Push para os superUsers do app IP Macaé, via Cloud Function do projeto
+      # ipmacae-app. Sem segredo: a function valida o token OIDC do GitHub
+      # (permissão id-token: write) e confere que veio deste workflow.
+      - name: Avisar superUsers do app (push)
         if: failure()
         continue-on-error: true
         env:
-          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-          ALERT_FROM: ${{ secrets.BOLETIM_ALERT_FROM }}
-          ALERT_TO: "muros@yahoo.com.br"
-          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          ALERT_URL: https://us-central1-ipmacae-app.cloudfunctions.net/notifyBulletinRenderFailure
+          REASON: ${{ steps.claude.outputs.reason }}
         run: |
-          if [ -z "$RESEND_API_KEY" ] || [ -z "$ALERT_FROM" ]; then
-            echo "::warning::Alerta de e-mail nao configurado: defina RESEND_API_KEY e BOLETIM_ALERT_FROM"
-            exit 0
-          fi
-          curl --fail-with-body -sS https://api.resend.com/emails \
-            -H "Authorization: Bearer $RESEND_API_KEY" \
+          OIDC_TOKEN=$(curl -sSf -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+            "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=ipmacae-bulletin-render-alert" | jq -r '.value')
+          curl --fail-with-body -sS -X POST "$ALERT_URL" \
+            -H "Authorization: Bearer $OIDC_TOKEN" \
             -H "Content-Type: application/json" \
-            -d "$(python -c 'import json, os; print(json.dumps({"from": os.environ["ALERT_FROM"], "to": [os.environ["ALERT_TO"]], "subject": "Falha no render do boletim", "text": "O workflow de atualizacao do boletim falhou. Consulte os logs: " + os.environ["RUN_URL"]}))')"
+            -d "$(jq -n --arg reason "$REASON" '{reason: $reason}')"

@@ -21,14 +21,16 @@ Upload semanal do PDF → Firebase (onDocumentCreated no projeto ipmacae)
   os campos essenciais do JSON e todos os assets referenciados pelo HTML.
   Quando algo falha, o commit e o deploy são bloqueados.
 
-**Secret necessário no repositório** (Settings → Secrets and variables →
-Actions) — basta UM dos dois:
+- Se a assinatura Claude estiver no limite de uso (429/529), o passo do Claude
+  tenta de novo a cada 15 min por até ~5h (o reset da janela de 5h). O PDF já
+  foi baixado no início, então o link assinado expirar não atrapalha.
 
-- `CLAUDE_CODE_OAUTH_TOKEN` (recomendado, sem custo extra): usa a assinatura
-  Claude Pro/Max existente. Gere o token na sua máquina com
+**Secret necessário no repositório** (Settings → Secrets and variables →
+Actions):
+
+- `CLAUDE_CODE_OAUTH_TOKEN`: usa a assinatura Claude Pro/Max existente (e
+  divide o limite de uso com ela). Gere o token na sua máquina com
   `claude setup-token` e cole o valor no secret.
-- `ANTHROPIC_API_KEY`: chave criada em https://console.anthropic.com (cada
-  execução consome créditos da API — na ordem de centavos por edição).
 
 ## Lado Firebase (projeto ipmacae) — código para integrar
 
@@ -108,18 +110,18 @@ apenas ao repositório `murosfc/bulletin-renderer` e permissão
 2. **Ponta a ponta:** faça o upload semanal normalmente e acompanhe a execução
    na aba Actions; ao final, confira o commit na main e o deploy da Vercel.
 
-## Alerta por e-mail
+## Alerta de falha
 
-Em caso de falha, o workflow envia um alerta pelo Resend e também abre ou
-comenta uma issue no GitHub. Cadastre estes secrets em Settings → Secrets and
-variables → Actions:
+Quando a atualização falha de vez (depois das novas tentativas), o workflow:
 
-- `RESEND_API_KEY`: chave da API do Resend.
-- `BOLETIM_ALERT_FROM`: remetente verificado no Resend, por exemplo
-  `boletim@seu-dominio.com`.
-
-O destinatário configurado é `muros@yahoo.com.br`. O endereço originalmente
-informado como `muros@yahoo.com.b` não é um endereço válido.
+- abre ou comenta a issue `🚨 Falha na atualização automática do boletim`
+  (label `automacao`);
+- manda um push para todos os usuários `superUser` do app IP Macaé, pela
+  Cloud Function `notifyBulletinRenderFailure` do projeto `ipmacae-app`
+  (código em `functions/src/notify-bulletin-render-failure.f.ts` no repo
+  ipmacae). Não há secret: o workflow envia um token OIDC do GitHub
+  (permissão `id-token: write`) e a function confere a assinatura e que o
+  token veio do `boletim.yml` deste repositório.
 
 ## Solução de problemas
 
